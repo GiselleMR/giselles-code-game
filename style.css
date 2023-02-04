@@ -1,7 +1,23 @@
-#rectangle{
-    width:250px;
-    height:500px;
-    background: pink;
+
+div {
+    background-color: blue;
 }
 
- 
+#gameboard 
+
+.rectangle{
+    width:500px;
+    height: 150px;0px;
+    background: pink;
+    display: flex;
+}
+
+.circle {
+    border: 1px blue solid;
+    height: 150px;
+    background: green;
+    border-radius: 100%;
+    margin: 0 auto;
+    width: 150px;
+    display: inline-block;
+}
