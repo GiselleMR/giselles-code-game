@@ -1,6 +1,3 @@
-const mastermind = document.getElementById("mastermind");
+//const mastermind = document.getElementById("mastermind");
 
-mastermind.addEventListener("click", fucntion (evt)) {
-    console.log("Hello: ", evt);
-
-});
+console.log("ItWorks")

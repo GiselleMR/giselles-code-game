@@ -1,4 +1,4 @@
-#gameboard {
+/* #gameboard {
     width: 500px;
     justify-content: center;
 }
@@ -43,4 +43,9 @@
 
 #blue {
    background-color: #1703FC
+} */
+
+body {
+
+    background-color: aqua;
 }
