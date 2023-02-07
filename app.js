@@ -77,6 +77,7 @@ function shuffleArray(a) {
  * @param {Array} arr1
  * @param {Array} arr2
  * @returns true or false
+ * check to see if winning color array and current color array are the same 
  * https://stackoverflow.com/questions/22395357/how-to-compare-two-arrays-are-equal-using-javascript
  */
 function isSame(arr1, arr2) {
