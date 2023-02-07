@@ -62,15 +62,14 @@ header {
    background-color: #1703FC
 }
 
-.buttons {
-    width: auto;
-    margin: 0 auto;
-    display: inline;
+button {
+
+    margin: auto;
+    background-color: darkgrey;
 
 }
 
-.action_btn {
-    width: 200px;
-    margin: 0 auto;
-    display: inline;
+button:hover {
+    color: white;
+    background-color: darkblue;
 }
