@@ -18,7 +18,7 @@ header {
 }
 
 .rectangle {
-    width: 100%;
+    width: 500px;
     height: 125px;
     display: flex;
     justify-content: center;
@@ -28,7 +28,7 @@ header {
 .circle {
     border: 1px black solid;
     height: 100px;
-    background: white;
+    background: gray;
     border-radius: 100%;
     margin: 0 auto;
     margin-top:10px;
@@ -56,4 +56,17 @@ header {
 
 #blue {
    background-color: #1703FC
+}
+
+.buttons {
+    width: auto;
+    margin: 0 auto;
+    display: inline;
+
+}
+
+.action_btn {
+    width: 200px;
+    margin: 0 auto;
+    display: inline;
 }
