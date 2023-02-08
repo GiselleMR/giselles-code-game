@@ -54,6 +54,7 @@ singleColorArray.forEach(function (element) {
       current_color_array = [];
     }
   });
+
 });
 
 //functions
