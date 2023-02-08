@@ -4,6 +4,7 @@ let CURRENT_CIRCLE = 0;
 const COLOR_ARRAY = ["pink", "teal", "blue", "green"];
 const WINNING_COLOR_ARRAY = shuffleArray(COLOR_ARRAY);
 let current_color_array = [];
+let playAgainBtn = document.getElementById('playAgainBtn')
 
 
 const colorMap = {
@@ -16,10 +17,12 @@ const colorMap = {
 console.log("WINNING_COLOR_ARRAY", WINNING_COLOR_ARRAY);
 
 // DOM elements
+
 const mastermind = document.getElementById("mastermind");
 const singleColorArray = document.querySelectorAll(".singlecolor");
 
 // adding event listeners
+
 mastermind.addEventListener("click", function (evt) {
   console.log("HELLO: ", evt);
 });
@@ -42,7 +45,7 @@ singleColorArray.forEach(function (element) {
     // NEW CODE
     current_color_array.push(colorMap[COLOR]);
     if (CURRENT_CIRCLE % 4 === 0) {
-      // after every 4 circles, we want to reset the current color array
+      // after every 4 circles, want to reset the current color array
       if (isSame(current_color_array, WINNING_COLOR_ARRAY)) {
         alert("WON THE GAME!");
       }
@@ -68,4 +71,11 @@ function isSame(arr1, arr2) {
       return element === arr2[index];
     })
   );
+}
+
+playAgainBtn.addEventListener('click', playAgain)
+
+function playAgain(){
+  current_color_array.fill(null)
+
 }
