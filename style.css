@@ -5,6 +5,7 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 header {
     font-size: 50px;
     font-family: "Rubik Bubbles", cursive;
@@ -13,12 +14,17 @@ header {
     justify-content: center;
 }
 
+#message {
+    color: white;
+    font-family: "Rubik Bubbles", cursive;
+    font-size: 20px;
+}
+
 #gameboard {
     width: 300px;
     display: grid;
     justify-content: center;
     border: dotted yellow;
-
 }
 
 .rectangle {
@@ -42,12 +48,10 @@ header {
 
 .colorbank {
     background-color: yellow;
-
 }
 
 #pink {
     background-color: #FC03B6;
-
 }
 
 #green {
@@ -60,22 +64,4 @@ header {
 
 #blue {
    background-color: #1703FC
-}
-
-button {
-
-    margin: auto;
-    background-color: darkgrey;
-
-}
-
-button:hover {
-    color: white;
-    background-color: darkblue;
-}
-
-#message {
-    color: white;
-    font-family: "Rubik Bubbles", cursive;
-    font-size: 20px;
 }

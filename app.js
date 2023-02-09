@@ -1,11 +1,9 @@
-//Variables these variables are global variables that will either stay the same or change.
 let COLOR = "";
 let CURRENT_CIRCLE = 0;
+let current_color_array = [];
 const COLOR_ARRAY = ["pink", "teal", "blue", "green"];
 const WINNING_COLOR_ARRAY = shuffleArray(COLOR_ARRAY);
-let current_color_array = [];
 
-//This is an (object) the colors in the color bank (key values store so that the key is going to be the color of the inside of the circle. the value is the readable value we want to use in the array )
 const colorMap = {
   "rgb(252, 3, 182)": "pink",
   "rgb(3, 252, 11)": "green",
@@ -15,24 +13,16 @@ const colorMap = {
 
  console.log("WINNING_COLOR_ARRAY", WINNING_COLOR_ARRAY);
 
-// DOM elements lines 20 - 22 im grabbing elements on the page im going to manipulate
 
-const mastermind = document.getElementById("mastermind");
 const singleColorArray = document.querySelectorAll(".singlecolor");
 const message = document.getElementById("message")
 
 
-// adding event listeners
-
-// mastermind.addEventListener("click", function (evt) {
-//   console.log("HELLO: ", evt);
-// });
 //each line of colors. after every 4 colors goign to check to see if the clorls you clicked match the winning array
 //single Color array is the color bank. eventlistiner is for every single color in the color bank. rename to colorbankarray
 singleColorArray.forEach(function (element) {
   element.addEventListener("click", function (evt) {
-    
-    if (CURRENT_CIRCLE >= 23) {
+    if (CURRENT_CIRCLE >= 24) {
       message.innerHTML = "YOU LOST";
       return;
     }
@@ -46,7 +36,7 @@ singleColorArray.forEach(function (element) {
     circleToUpdate.style.background = COLOR; //color then updating in that ID
 
     
-    current_color_array.push(colorMap[COLOR]);
+    current_color_array.push(colorMap[COLOR]);//using the push method to 
     if (current_color_array.length === 4) {
       
       if (isSame(current_color_array, WINNING_COLOR_ARRAY)) {

@@ -4,3 +4,10 @@ For this game I used, Vanilla Javascript, HTML and CSS
 //Screenshots of game here 
 // Link to game here
 As I progress and get better with my code I would like to add some additional features that the original Masterminds games has such as, a key and a timer counting down. The key holds 4 pegs, they are black white and grey. These differnet colors represent if your current guess has 1) the correct colors 2) a color in the correct spot of 3) no colors match. 
+
+Below link for shuffle syntax
+https://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array
+
+<img src=“images/Mastermind Start.png”  width=“600">
+<img src="images/Screenshot 2023-02-09 at 12.37.44 PM.png" width="600">
+<img src="images/Screenshot 2023-02-09 at 12.38.33 PM.png" width="600">
