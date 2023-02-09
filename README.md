@@ -8,6 +8,6 @@ As I progress and get better with my code I would like to add some additional fe
 Below link for shuffle syntax
 https://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array
 
-<img src=“images/Mastermind Start.png”  width=“600">
+<img src="images/Screenshot 2023-02-09 at 4.35.59 PM.png" width="600">
 <img src="images/Screenshot 2023-02-09 at 12.37.44 PM.png" width="600">
 <img src="images/Screenshot 2023-02-09 at 12.38.33 PM.png" width="600">

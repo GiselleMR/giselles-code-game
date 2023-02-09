@@ -42,6 +42,7 @@ singleColorArray.forEach(function (element) {
       if (isSame(current_color_array, WINNING_COLOR_ARRAY)) {
         message.innerHTML = "YOU WON"
       }
+      
       current_color_array = [];//reseting to show we have moved on to the next rectangle but have not changed any colors
 
     }
@@ -49,7 +50,6 @@ singleColorArray.forEach(function (element) {
 
 });
 
-//functions assiging elements in an array reasigning the original line 64 is saying taht a is array i is the current index of the element we are at. for the elemeent of a at the current index I and the array a at the current index J(j is randomly generated) going ot reasign that element at a and j to be j and I
 
 function shuffleArray(a) {
     for (let i = a.length - 1; i > 0; i--) {
