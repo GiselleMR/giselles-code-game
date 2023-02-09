@@ -14,7 +14,7 @@ const colorMap = {
   "rgb(23, 3, 252)": "blue",
 };
 
-console.log("WINNING_COLOR_ARRAY", WINNING_COLOR_ARRAY);
+ console.log("WINNING_COLOR_ARRAY", WINNING_COLOR_ARRAY);
 
 // DOM elements
 

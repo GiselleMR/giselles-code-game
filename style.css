@@ -14,7 +14,7 @@ header {
 }
 
 #gameboard {
-    width: 500px;
+    width: 300px;
     display: grid;
     justify-content: center;
     border: dotted yellow;
@@ -22,8 +22,8 @@ header {
 }
 
 .rectangle {
-    width: 500px;
-    height: 125px;
+    width: 300px;
+    height: 80px;
     display: flex;
     justify-content: center;
     margin: auto;
@@ -31,12 +31,12 @@ header {
 
 .circle {
     border: 1px black solid;
-    height: 100px;
+    height: 50px;
     background: gray;
     border-radius: 100%;
     margin: 0 auto;
     margin-top:10px;
-    width: 100px;
+    width: 50px;
     display: inline-block;
 }
 
