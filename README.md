@@ -5,8 +5,6 @@ Masterminds is a code breaking game where a player selects a sequence of color c
 For this game I used, Vanilla Javascript, HTML and CSS
 
 
-Below link for shuffle syntax
-https://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array
 
 <img src="images/Screenshot 2023-02-09 at 4.35.59 PM.png" width="600">
 <img src="images/Screenshot 2023-02-09 at 12.37.44 PM.png" width="600">
