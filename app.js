@@ -76,8 +76,3 @@ function isSame(arr1, arr2) {
   );
 }
 
-playAgainBtn.addEventListener('click', playAgain)
-
-function playAgain(){
-  current_color_array.fill(null)
-
