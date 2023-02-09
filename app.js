@@ -4,7 +4,6 @@ let CURRENT_CIRCLE = 0;
 const COLOR_ARRAY = ["pink", "teal", "blue", "green"];
 const WINNING_COLOR_ARRAY = shuffleArray(COLOR_ARRAY);
 let current_color_array = [];
-// let playAgainBtn = document.getElementById('playAgainBtn')
 
 
 const colorMap = {
@@ -31,7 +30,7 @@ mastermind.addEventListener("click", function (evt) {
 
 singleColorArray.forEach(function (element) {
   element.addEventListener("click", function (evt) {
-    // NEW CODE
+    
     if (CURRENT_CIRCLE > 24) {
       message.innerHTML = "YOU LOST";
       return;
@@ -44,10 +43,10 @@ singleColorArray.forEach(function (element) {
     const circleToUpdate = document.getElementById(CURRENT_CIRCLE.toString());
     circleToUpdate.style.background = COLOR;
 
-    // NEW CODE
+    
     current_color_array.push(colorMap[COLOR]);
     if (CURRENT_CIRCLE % 4 === 0) {
-      // after every 4 circles, want to reset the current color array
+      
       if (isSame(current_color_array, WINNING_COLOR_ARRAY)) {
         message.innerHTML = "YOU WON"
       }
