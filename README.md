@@ -4,7 +4,7 @@ Masterminds is a code breaking game where a player selects a sequence of color c
 
 For this game I used, Vanilla Javascript, HTML and CSS
 
-
+https://gisellemr.github.io/giselles-code-game/
 
 <img src="images/Screenshot 2023-02-09 at 4.35.59 PM.png" width="600">
 <img src="images/Screenshot 2023-02-09 at 12.37.44 PM.png" width="600">
