@@ -11,14 +11,14 @@ const colorMap = {
   "rgb(23, 3, 252)": "blue",
 };
 
- console.log("WINNING_COLOR_ARRAY", WINNING_COLOR_ARRAY);
+console.log("WINNING_COLOR_ARRAY", WINNING_COLOR_ARRAY);
 
 const singleColorArray = document.querySelectorAll(".singlecolor");
 const message = document.getElementById("message")
 
 singleColorArray.forEach(function (element) {
-  element.addEventListener("click", function (evt) {
-    if (CURRENT_CIRCLE >= 24) {
+  element.addEventListener("click", function() {
+    if (CURRENT_CIRCLE === 24) {
       message.innerHTML = "YOU LOST";
       return;
     }
@@ -26,7 +26,7 @@ singleColorArray.forEach(function (element) {
     COLOR = style.backgroundColor; 
     CURRENT_CIRCLE += 1; 
     console.log(COLOR);
-
+    
     const circleToUpdate = document.getElementById(CURRENT_CIRCLE.toString()); 
     circleToUpdate.style.background = COLOR; 
     
@@ -34,15 +34,15 @@ singleColorArray.forEach(function (element) {
     if (current_color_array.length === 4) {
       
       if (isSame(current_color_array, WINNING_COLOR_ARRAY)) {
-        message.innerHTML = "YOU WON"
+        message.innerHTML = "YOU WON";
+        return;
       }
-
-      current_color_array = [];
+      
     }
+    console.log(CURRENT_CIRCLE);
   });
-
+  
 });
-
 
 function shuffleArray(a) {
     for (let i = a.length - 1; i > 0; i--) {
@@ -60,4 +60,3 @@ function isSame(arr1, arr2) {
     })
   );
 }
-
