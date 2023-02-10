@@ -34,7 +34,7 @@ singleColorArray.forEach(function (element) {
     if (current_color_array.length === 4) {
       
       if (isSame(current_color_array, WINNING_COLOR_ARRAY)) {
-        message.innerHTML = "YOU WON";
+        message.innerHTML = "YOU WON"
         return;
       }
       
